@@ -55,7 +55,7 @@ function calculate() {
   text("Driver 1: "+qualyTimeMin[0]+" - "+qualyTimeMax[0], 450, 30);
   
   let leading = 50;
-  for(let i = 1; i <= numberDrivers; i++) {
+  for(let i = 1; i <= numberDrivers+1; i++) {
     qualyTimeMin[i] = qualyTimeMin[i-1] + 0.10;
     let t = round(qualyTimeMin[i], 2);
     qualyTimeMin[i] = float(t);
