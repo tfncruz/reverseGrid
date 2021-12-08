@@ -6,7 +6,7 @@ let button;
 let numberDrivers, yourPosition;
 
 function setup() {
-  createCanvas(800, 400);
+  createCanvas(800, 800);
 
   let numberDriversLabel = createElement('p', 'how many drivers?');
   numberDriversLabel.position(10, 10);
@@ -55,7 +55,7 @@ function calculate() {
   text("Driver 1: "+qualyTimeMin[0]+" - "+qualyTimeMax[0], 450, 30);
   
   let leading = 50;
-  for(let i = 1; i <= numberDrivers+1; i++) {
+  for(let i = 1; i < numberDrivers; i++) {
     qualyTimeMin[i] = qualyTimeMin[i-1] + 0.10;
     let t = round(qualyTimeMin[i], 2);
     qualyTimeMin[i] = float(t);
