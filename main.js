@@ -7,6 +7,7 @@ let numberDrivers, yourPosition;
 
 function setup() {
   createCanvas(800, 800);
+  background(200);
 
   let numberDriversLabel = createElement('p', 'how many drivers?');
   numberDriversLabel.position(10, 10);
@@ -40,7 +41,7 @@ function setup() {
 function draw() { }
 
 function calculate() {
-  background(255); 
+  background(200); 
 
   numberDrivers = int(numberDriversInput.value());
   yourPosition = int(yourPositionInput.value());
