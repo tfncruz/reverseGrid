@@ -40,7 +40,7 @@ function setup() {
 function draw() { }
 
 function calculate() {
-  background(200); 
+  background(255); 
 
   numberDrivers = int(numberDriversInput.value());
   yourPosition = int(yourPositionInput.value());
