@@ -46,7 +46,7 @@ function calculate() {
   yourPosition = int(yourPositionInput.value());
 
   let positionSecondRace = numberDrivers+1-yourPosition;
-  text("your position on the grid: "+positionSecondRace, 450, 10);
+  text("your position on the grid for race 2: "+positionSecondRace, 450, 10);
 
   let qualyTimeMin = [];
   let qualyTimeMax = [];
@@ -55,7 +55,7 @@ function calculate() {
   text("Driver 1: "+qualyTimeMin[0]+" - "+qualyTimeMax[0], 450, 30);
   
   let leading = 50;
-  for(let i = 1; i < numberDrivers; i++) {
+  for(let i = 1; i <= numberDrivers; i++) {
     qualyTimeMin[i] = qualyTimeMin[i-1] + 0.10;
     let t = round(qualyTimeMin[i], 2);
     qualyTimeMin[i] = float(t);
